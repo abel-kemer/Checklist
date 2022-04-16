@@ -115,11 +115,8 @@ class ChecklistViewController: UITableViewController, AddItemViewControllerDeleg
         for segue: UIStoryboardSegue,
         sender: Any?
     ) {
-        // 1
         if segue.identifier == "AddItem" {
-            // 2
             let controller = segue.destination as! AddChecklistItemViewController
-            // 3
             controller.delegate = self
         }
     }
