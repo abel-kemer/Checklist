@@ -44,7 +44,7 @@ func textField(
     
     let oldText = textField.text!
     let stringRange = Range(range, in: oldText)!
-    let newText = oldText.replacingCharacters(
+    _ = oldText.replacingCharacters(
         in: stringRange,
         with: string)
 
